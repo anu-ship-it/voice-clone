@@ -1,0 +1,18 @@
+# Voice Clone - Dependencies
+# Run: pip install -r requirements.txt
+
+# Core TTS engine with XTTS-v2 voice cloning
+coqui-tts>=0.22.0
+
+# PyTorch — CPU version (smaller download)
+# If you have NVIDIA GPU, replace with: pip install torch --index-url https://download.pytorch.org/whl/cu121
+torch>=2.0.0
+
+# Audio processing
+pydub>=0.25.1
+
+# Needed by pydub for non-wav formats (mp3, m4a, ogg)
+# Also install ffmpeg on your system:
+#   Mac:     brew install ffmpeg
+#   Ubuntu:  sudo apt install ffmpeg
+#   Windows: https://ffmpeg.org/download.html
